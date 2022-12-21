@@ -8,6 +8,12 @@ namespace LINQ_test.Classes
 {
     public class Institute
     {
+        private static Institute _instance { get; } = new();
+        public static Institute GetInstance()
+        {
+            return _instance;
+        }
+
         public string Name { get; set; }
         public HashSet<Teacher> Teachers { get; set; } = new();
         public HashSet<Course> Courses { get; set; } = new();
@@ -16,7 +22,7 @@ namespace LINQ_test.Classes
         public HashSet<ClassroomStudent> ClassroomStudents { get; set; } = new();
 
 
-        public Institute(string name = "Hope's Peak Academy")
+        private Institute(string name = "Hope's Peak Academy")
         {
             Name = name;
             InitializeData();

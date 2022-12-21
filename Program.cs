@@ -6,7 +6,7 @@ namespace LINQ_test
     {
         static void Main(string[] args)
         {
-            Institute repo = new Institute("Hope's Peak Academy");
+            Institute repo = Institute.GetInstance();
             // write your LINQ queries here
             // var result = repo........
             // Console.WriteLine(result);
