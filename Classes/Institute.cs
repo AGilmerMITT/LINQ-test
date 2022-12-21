@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LINQ_test.Classes
 {
-    internal class Institute
+    public class Institute
     {
         public string Name { get; set; }
         public HashSet<Teacher> Teachers { get; set; } = new();
@@ -22,7 +22,7 @@ namespace LINQ_test.Classes
             InitializeData();
         }
 
-        public void InitializeData()
+        private void InitializeData()
         {
             #region Courses
             Course math = new(name: "Math", credits: 3);

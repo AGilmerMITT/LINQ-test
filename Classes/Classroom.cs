@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LINQ_test.Classes
 {
-    internal class Classroom
+    public class Classroom
     {
         private static int _nextId = 1;
         public int Id { get; }

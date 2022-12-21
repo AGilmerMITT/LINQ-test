@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LINQ_test.Classes
 {
-    internal class ClassroomStudent
+    public class ClassroomStudent
     {
         public Classroom Classroom { get; set; }
         public Student Student { get; set; }
